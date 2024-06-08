@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .main_container {
+            height: 99vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first-child-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 100vh;
+            width: 91%;
+            height: 61vh;
+            background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+        }
+
+        .content {
+            width: 38%;
+            padding: -8px 5px 10px 49px;
+        }
+
+        .shoes img {
+            width: 33rem;
+            height: 26rem;
+            position: absolute;
+            top: 10rem;
+            right: 12rem;
+        }
+
+        .shoes img:hover {
+            width: 45rem;
+            height: 28rem;
+        }
+
+        .second_content {
+            color: white;
+            font-size: 20px;
+            padding-left: 5rem;
+        }
+
+        .main_container::before{
+           content: "";
+           position: absolute;
+           inset:0;
+           background: linear-gradient(to right, #b92b27, #1565c0);
+           z-index: -1;
+           transform:skewY(10deg);
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="first-child-container">
+            <div class="content">
+                <div class="second_content">
+                    <h1>Shoe-1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet at, blanditiis saepe adipisci
+                        molestiae neque quisquam perferendis, repudiandae repellendus odio a repellat minus iste
+                        sapiente molestias nulla nam, quas perspiciatis!
+                        <br><br>
+                        Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolore.
+                    </p>
+                </div>
+            </div>
+            <div class="shoes">
+                <img src="https://parspng.com/wp-content/uploads/2023/02/shoespng.parspng.com-12.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
